@@ -4,13 +4,13 @@
 服务运行在leancloud的云引擎上，同时使用leancloud做存储，  
 使用leancloud命令行工具构建项目
 
-#项目运行
+# 项目运行
 首先确认本机已经安装 [Node.js](http://nodejs.org/)运行环境
-##安装依赖：
+## 安装依赖：
 ```
 npm install
 ```
-##本地运行
+## 本地运行
 ```
 node server.js 或  
 nodemon server.js (修改文件自动重启服务)
@@ -28,8 +28,8 @@ lean switch
 lean deploy
 ```
 
-#前端游戏
-##工兵扛军旗
+# 前端游戏
+## 工兵扛军旗
 [在线demo http://junqi.chengxg.site](http://junqi.chengxg.site)
 
 项目gif截图  
