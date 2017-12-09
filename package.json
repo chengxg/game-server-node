@@ -9,8 +9,9 @@
     "dev": "nodemon server.js"
   },
   "dependencies": {
-    "leanengine": "^2.0.0",
-    "socket.io" : "latest"
+    "leancloud-storage": "^3.0.0",
+    "leanengine": "^3.0.0",
+    "socket.io": "latest"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
