@@ -10,6 +10,7 @@ let playerLoginAction = function(server, socket) {
 		let name = data["userName"];
 		userLogin(data, function(ret) {
 			if(ret["success"]) {
+				console.log("玩家：" + name + " 登录成功！");
 				loginSuccess(ret);
 			} else {
 				if(fn) {
