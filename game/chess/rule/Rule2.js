@@ -141,9 +141,7 @@ var Rule2 = (function() {
 			"pai": [
 				[ct.kong, kt.kill],
 				[ct.pai, kt.die],
-				[ct.gong, kt.kill],
-				[ct.pai_zha, kt.die],
-				[ct.zha, kt.capture]
+				[ct.gong, kt.kill]
 			],
 			"gong": [
 				[ct.kong, kt.kill],
