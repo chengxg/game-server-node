@@ -235,7 +235,7 @@ var ChessRoom = (function() {
 		let rule = this.rule;
 
 		this.createChessArr = util.clone(rule.allChessArr);
-		this.shuffle(this.createChessArr);
+		util.shuffleMeisen(this.createChessArr);
 
 		let cover = rule.chessType.cover,
 			POSITION_GRAPH = CON.POSITION_GRAPH;
@@ -270,21 +270,6 @@ var ChessRoom = (function() {
 		this.chessboard[10] = [500];
 		this.chessboard[11] = [500];
 	};
-
-	/**
-	 * 打乱棋子
-	 * @param {Array} input
-	 * @return {Array}
-	 */
-	ChessRoom.prototype.shuffle = function(input) {
-		for(let i = input.length - 1; i >= 0; i--) {
-			let randomIndex = Math.floor(Math.random() * (i + 1));
-			let itemAtIndex = input[randomIndex];
-			input[randomIndex] = input[i];
-			input[i] = itemAtIndex;
-		}
-		return input;
-	}
 
 	/**
 	 * 得到当前 下棋者

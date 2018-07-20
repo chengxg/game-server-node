@@ -138,6 +138,22 @@ var BaseRule = (function() {
 		}
 		return ret;
 	}
+	
+	/**
+	 * 棋子数组中是否包含 指定棋子类型
+	 * @param {Array} chessArr
+	 * @param {Number} chessType
+	 */
+	BaseRule.prototype.isContainsChessType = function(chessArr,chessType) {
+		let chessTypeMap = this.chessType;
+		return chessArr.some(function(chess){
+			let baseChessType = chessTypeMap[chessTypeMap[chess]];
+			if(baseChessType == chessType){
+				return true;
+			}
+			return false;
+		})
+	}
 
 	return BaseRule;
 })();
